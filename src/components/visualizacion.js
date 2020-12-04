@@ -29,7 +29,7 @@ function Visualizacion(props) {
             let g = svg.append("g").attr("transform", `translate(${margin.left},${margin.top})`);
 
             let y = d3.scaleLinear()
-                .domain([0, 973306])
+                .domain([0, 12])
                 .range([iheight, 0]);
             let x = d3.scaleBand()
                 .domain(res.map(d => d.name))
